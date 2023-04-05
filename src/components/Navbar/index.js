@@ -19,7 +19,7 @@ const Navbar = () => {
       <nav dir="rtl" className="bg-white w-full border-b md:border-0">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="javascript:void(0)">
+                    <a href="#home">
                         <img
                             src={NavbarLogo}
                             width={30} 
