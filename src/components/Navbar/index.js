@@ -10,10 +10,9 @@ const Navbar = () => {
   // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "", path: "" },
-    { title: "الرئيسية", path: "javascript:void(0)" },
-    { title: "من أنا", path: "javascript:void(0)" },
-    { title: "الخدمات", path: "javascript:void(0)" },
-    { title: "اعمالي", path: "javascript:void(0)" }
+    { title: "من أنا", path: "#about" },
+    { title: "الخدمات", path: "#services" },
+    { title: "اعمالي", path: "#portfolio" }
   ]
 
   return (
@@ -59,7 +58,7 @@ const Navbar = () => {
                   </ul>
               </div>
               <div className="hidden md:inline-block">
-                <a href="javascript:void(0)" className="py-2 px-4 text-white bg-blue-600 hover:bg-blue-700 rounded-sm shadow">
+                <a href="#contact" className="py-2 px-4 text-white bg-blue-600 hover:bg-blue-700 rounded-sm shadow">
                     تواصل معي
                 </a>
               </div>

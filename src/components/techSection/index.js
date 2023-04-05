@@ -8,7 +8,7 @@ import NodeIcon from "../../images/node-js-1174925.png"
 import FigmaIcon from "../../images/5968705.png"
 const TechSection = () => {
   return (
-    <div dir='rtl' class="py-8 px-10 my-8  mx-auto max-w-screen-xl sm:py-16 lg:px-6 bg-white rounded-lg shadow dark:bg-gray-800">
+    <div dir='rtl' class="py-8 px-10 my-8  mx-auto max-w-screen-xl sm:py-16 lg:px-6 bg-white rounded-lg  dark:bg-gray-800">
     <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white">
         مهاراتي
     </h2>
@@ -19,9 +19,8 @@ const TechSection = () => {
         <div class="p-4">
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="react" src={ReactIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
@@ -36,9 +35,8 @@ const TechSection = () => {
             <div class="p-4">
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="mui" src={MuiIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
@@ -55,9 +53,8 @@ const TechSection = () => {
 
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="html" src={HtmlIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
@@ -73,9 +70,8 @@ const TechSection = () => {
 
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="css" src={CssIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
@@ -92,9 +88,8 @@ const TechSection = () => {
 
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="mongo" src={MongoIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
@@ -111,9 +106,8 @@ const TechSection = () => {
 
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="nodejs" src={NodeIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
@@ -130,9 +124,8 @@ const TechSection = () => {
 
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                    <a href="#" class="relative block">
                         <img alt="figma" src={FigmaIcon} class="mx-auto object-cover h-20 w-22 "/>
-                    </a>
+                    
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">

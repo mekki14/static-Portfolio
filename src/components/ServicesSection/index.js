@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServicesSection = () => {
   return (
-    <section dir='rtl' class="bg-white my-8 px-10 dark:bg-gray-900">
+    <section dir='rtl' id="services" class="bg-white my-8 px-10 dark:bg-gray-900">
   <div class=" py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class="max-w-screen-md mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">خدماتي</h2>
