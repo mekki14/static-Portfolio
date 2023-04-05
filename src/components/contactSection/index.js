@@ -6,11 +6,10 @@ const ContactSection = () => {
     e.preventDefault();
     
     // Get form data
-    const formData = new FormData(e.target);
     console.log()
     // Construct message to send to Discord webhook
     const message = {
-      "content": `New contact form submission from ${e.target.email.value}`,
+      content: `New contact form submission from ${e.target.email.value}`,
       embeds: [
         {
           title: e.target.subject.value,
@@ -26,7 +25,7 @@ const ContactSection = () => {
     };
     
     // Send message to Discord webhook
-    const response = await fetch('https://discord.com/api/webhooks/1093153479058522192/04arrlKUk0OTqUoOrQb1yp-EsvfkWY-JSjiRUcnvv1bkyuFkgEE6ebwTj4PZM1V9XxyQ', {
+    const response = await fetch('https://discord.com/api/webhooks/1055225082034790410/Ij6Ky2JZ_v0ZlIXwJ4cpn8umNOmxXX_a5piJOUDyNHsEfxhD7QDLOAnFaBgCWU5FxA1v', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -43,6 +42,7 @@ const ContactSection = () => {
     } else {
       // Handle error
       console.log(response)
+      console.log(JSON.stringify(message))
     }
   };
 
