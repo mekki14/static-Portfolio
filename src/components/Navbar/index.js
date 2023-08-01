@@ -9,7 +9,7 @@ const Navbar = () => {
 
   // Replace javascript:void(0) path with your path
   const navigation = [
-    { title: "", path: "" },
+    { title: "", path: "/" },
     { title: "من أنا", path: "#about" },
     { title: "الخدمات", path: "#services" },
     { title: "اعمالي", path: "#portfolio" }
@@ -19,7 +19,7 @@ const Navbar = () => {
       <nav dir="rtl" className="bg-white w-full border-b md:border-0">
           <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="#home">
+                    <a href="/">
                         <img
                             src={NavbarLogo}
                             width={30} 

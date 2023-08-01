@@ -2,7 +2,7 @@ import React from 'react'
 import ReactIcon from "../../images/React-icon.svg.png"
 import HtmlIcon from "../../images/html-5.png"
 import CssIcon from "../../images/css-3.png"
-import MuiIcon from "../../images/logo.png"
+import MantineIcon from "../../images/brand-mantine.svg"
 import MongoIcon from "../../images/mongodb_original_logo_icon_146424.png"
 import NodeIcon from "../../images/node-js-1174925.png"
 import FigmaIcon from "../../images/5968705.png"
@@ -35,12 +35,12 @@ const TechSection = () => {
             <div class="p-4">
             <div class="flex-col  flex justify-center items-center">
                 <div class="flex-shrink-0">
-                        <img alt="mui" src={MuiIcon} class="mx-auto object-cover h-20 w-22 "/>
+                        <img alt="mui" src={MantineIcon} class=" mx-auto object-cover h-20 w-22 "/>
                     
                 </div>
                 <div class="mt-2 text-center flex flex-col">
                     <span class="text-lg font-medium text-gray-600 dark:text-white">
-                        MUI
+                        Mantine ui
                     </span>
                     <span class="text-xs text-gray-400">
                         مهارات

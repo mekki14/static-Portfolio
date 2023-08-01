@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import {AiOutlineWhatsApp} from 'react-icons/ai'
 const ContactSection = () => {
   const [success, setSuccess] = useState(false)
   const handleSubmit = async (e) => {
@@ -67,7 +67,14 @@ const ContactSection = () => {
   
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">تواصل معي</h2>
-      <h5 class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">ادخل معلومات تواصلك وطلبك وسيتم الرد عليك في بريدك الالكتروني.</h5>
+      <div className='flex my-8 flex-col justify-center items-center'>
+      <h5 class="mb-4 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">يمكنك التواصل معي من خلال الواتساب.</h5>
+      <a href='https://web.whatsapp.com/send/?phone=213664931842&text&type=phone_number&app_absent=0' class="px-3 py-2 hover:bg-green-600 text-white text-xl font-semibold flex flex-row items-center gap-2 rounded-md bg-green-400 ">
+      <AiOutlineWhatsApp/>  من هنا 
+      </a>
+      </div>
+      <h5 class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">اوادخل معلومات تواصلك وطلبك وسيتم الرد عليك في بريدك الالكتروني.</h5>
+       
       <form onSubmit={handleSubmit} class="space-y-8">
           <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">بريدك الالكتروني </label>
