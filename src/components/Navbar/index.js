@@ -10,9 +10,9 @@ const Navbar = () => {
   // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "", path: "/" },
-    { title: "من أنا", path: "#about" },
-    { title: "الخدمات", path: "#services" },
-    { title: "اعمالي", path: "#portfolio" }
+    { title: "من أنا", path: "/#about" },
+    { title: "الخدمات", path: "/#services" },
+    { title: "اعمالي", path: "/#portfolio" }
   ]
 
   return (
