@@ -12,6 +12,7 @@ const CarouselProject = () => {
   return (
     <Swiper
     className='mt-6 w-full flex  rounded-md'
+    dir='rtl'
     scrollbar={{
         hide: true,
       }}
