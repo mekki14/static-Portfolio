@@ -21,7 +21,7 @@ const Project = () => {
   return (
       <div className='overflow-hidden '>
         <Navbar/>
-        <section dir='rtl' className='container my-12 px-14 bg-white   flex justify-center text-right items-start flex-col dark:bg-gray-900 '>
+        <section dir='rtl' className='container my-12 px-12 md:px-32 lg:px-40 xl:px-60 bg-white   flex justify-center text-right items-start flex-col dark:bg-gray-900 '>
             <div className='w-80 my-7 relative rounded-md group'>
 
 <img className='w-full rounded-md ' src={img01} alt='preview image'/>
@@ -31,7 +31,7 @@ const Project = () => {
     </span>
   </div>
             </div>
-        <h1 className='text-2xl my-2 font-bold'>
+        <h1 className='text-3xl my-2 font-bold'>
 مشروع nasikeoroupe
         </h1>
         <p className='text-gray-600 my-2'>
@@ -47,7 +47,7 @@ const Project = () => {
         <button
           type="button"
           onClick={openModal}
-          className="transition-all duration-200 rounded-md bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          className="my-4 transition-all duration-200 rounded-md bg-blue-100 px-4 py-2 text-md font-bold text-blue-800 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
         >
           عرض صور المشروع
         </button>
