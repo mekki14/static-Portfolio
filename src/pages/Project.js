@@ -21,7 +21,7 @@ const Project = () => {
   return (
       <div className='overflow-hidden '>
         <Navbar/>
-        <section dir='rtl' className='container my-12 px-12 md:px-32 lg:px-40 xl:px-60 bg-white   flex justify-center text-right items-start flex-col dark:bg-gray-900 '>
+        <section dir='rtl' className='container my-12 px-6 md:px-32 lg:px-40 xl:px-60 bg-white   flex justify-center text-right items-start flex-col dark:bg-gray-900 '>
             <div className='w-80 my-7 relative rounded-md group'>
 
 <img className='w-full rounded-md ' src={img01} alt='preview image'/>
