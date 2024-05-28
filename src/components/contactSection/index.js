@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {AiOutlineWhatsApp} from 'react-icons/ai'
 const ContactSection = () => {
   const [success, setSuccess] = useState(false)
+  const [failed, setFailed] = useState(false)
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -25,7 +26,7 @@ const ContactSection = () => {
     };
     
     // Send message to Discord webhook
-    const response = await fetch('https://discord.com/api/webhooks/1055225082034790410/Ij6Ky2JZ_v0ZlIXwJ4cpn8umNOmxXX_a5piJOUDyNHsEfxhD7QDLOAnFaBgCWU5FxA1v', {
+    const response = await fetch('https://discord.com/api/webhooks/1055225062292201563/LOsbPtvHkx2edAP4xY0cMzwQN6LuHrsYbJExDT_PNxZ_blClzDiX69ckW7QLhZ25r22y', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -40,6 +41,7 @@ const ContactSection = () => {
     console.log(response)
 
     } else {
+    setFailed(true)  
       // Handle error
       console.log(response)
       console.log(JSON.stringify(message))
@@ -63,6 +65,26 @@ const ContactSection = () => {
     </button>
 </div>)
   }
+  {
+    failed && (
+        <div id="toast-failed" class="fixed flex top-3 right-6 items-center w-full max-w-xs p-4 mb-4 text-red-500 bg-white rounded-lg shadow dark:text-red-400 dark:bg-gray-800" role="alert">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-red-500 bg-red-100 rounded-lg dark:bg-red-800 dark:text-red-200">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 00-2 0v4a1 1 0 102 0v-4zm0 6a1 1 0 00-2 0 1 1 0 00.293.707A.996.996 0 009 14h2a1 1 0 00.707-.293 1 1 0 000-1.414A1 1 0 0011 13zm-1-7a1 1 0 00-1 1v4a1 1 0 102 0V7a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Error icon</span>
+            </div>
+            <div class="ml-3 text-sm font-normal">فشل إرسال الرسالة، يرجى المحاولة مرة أخرى</div>
+            <button type="button" onClick={() => setFailed(false)} class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-failed" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    )
+}
+
   
   
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
